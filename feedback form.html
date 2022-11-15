@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>FEED BACK</title>
+</head>
+
+<body>
+<style>
+#Main{
+	text-align:center;
+	color:#00FFFF ;
+	padding-top:50px;
+	font-size:20;
+} 
+</style>
+<header>
+<div id="Main">
+<h1>FeedBack For The Art Of Living Session</h1>
+<label><b>Enter the FeedBack:</b></label>
+<input type="text"  id="feedback" width:100px height:100px>
+<br><br>
+<button onclick="addFeedback()">Add FeedBack</button>
+<br><br>
+<button onclick="displayFeedback()">View FeedBack</button>
+<br><br>
+<div id="result"><h2></h2></div>
+<script>
+var Feedback = [];
+function addFeedback() {
+    var string = document.getElementById("feedback").value;
+    Feedback.push(string);
+    document.getElementById("feedback").value = "";
+    document.getElementById("result").innerHTML =  "successfully added feedback Details" + "<br>";
+    
+}
+function displayFeedback() {
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("result").innerHTML +=  "Feedback Details" + "<br>";
+    for (var i=0;i<Feedback.length;i++) {
+        document.getElementById("result").innerHTML += "Feedback"+(i+1) + "<br>"+ Feedback[i]+"<br>"
+    }
+
+}
+</script>
