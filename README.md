@@ -1,10 +1,25 @@
 # Cognizant_Internship_Hands-ON
-#DOTNET DOMAIN
-Stage 1:HTML5, CSS3, JavaScript: 
-i> #Bill Calculator https://github.com/goswamishipra15/Cognizant_Internship_Hands-ON/blob/main/bill%20calculator.html
-ii> #EMI Calculator https://github.com/goswamishipra15/Cognizant_Internship_Hands-ON/blob/main/emi%20calculator.html
-iii> #Feedback form https://github.com/goswamishipra15/Cognizant_Internship_Hands-ON/blob/main/feedback%20form.html
-iv> #Online Ticket Booking https://github.com/goswamishipra15/Cognizant_Internship_Hands-ON/blob/main/online_ticket_booking.html
-v> #Simple Calculator https://github.com/goswamishipra15/Cognizant_Internship_Hands-ON/blob/main/simple%20calculator.html
+DOTNET DOMAIN
+
+Stage 1:- 1.HTML5, CSS3, JavaScript: 
+
+HANDS-ON
+i> Bill Calculator 
+ii> EMI Calculator 
+iii> Feedback form 
+iv> Online Ticket Booking 
+v> Simple Calculator 
+
+2.RDBMS,SQL,MySQL:
+HANDS-ON: They gave 3 Case Study to solve.
+
+3.C#: In this, they only taught us with the basics of C#
+
+
+
+
+
+
+
                                    
               
