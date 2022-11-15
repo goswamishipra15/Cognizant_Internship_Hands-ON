@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>EMI Calculator</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: black;
+        }
+
+        table {
+            border-spacing: 20px;
+            background-color: pink;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <h1>EMI Calculator</h1>
+    <form id="EMI" onsubmit="return calculateEMI()">
+        <table width="30%" height="50%">
+            <tr>
+                <td> <b> Principal Amount in Rs.</b></td>
+                <td><input type="number" id="principal" placeholder="Enter Principal Amount in Rs." required /></td>
+            </tr>
+            <tr>
+                <td> <b> Interest Per Annum</b></td>
+                <td><input type="number" id="interest" placeholder="Enter the Interest Rate" required /></td>
+            </tr>
+            <tr>
+                <td> <b>Tenure in Months</b> </td>
+                <td><input type="number" id="time" placeholder="Time Period in Months" required /></td>
+            </tr>
+            <tr>
+                <td style="text-align:right"><button id="submit" type="submit"  onsubmit="calculateEMI()">Calculate</button></td>
+                <td><button id="reset" type="reset">Clear</button></td>
+            </tr>
+            <tr>
+                <td><div id="result"></div></td>
+            </tr>
+        </table>
+        
+    </form>
+    <script>
+        function calculateEMI() {
+            var P = document.getElementById("principal").value;
+            var rate = document.getElementById("interest").value;
+            var N = document.getElementById("time").value;
+            var R = (rate / 100) / 12;
+            var result = P * R * ((1 + R) ** N / ((1 + R) ** N - 1));
+            let EMI = result.toFixed(2);
+            document.getElementById('result').innerHTML ="<b> EMI is Rs."+EMI;
+            return false;
+        }
+    </script>
+</body>
+</html>
