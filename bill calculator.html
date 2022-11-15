@@ -1,0 +1,71 @@
+<!Doctype html>
+<html>
+<head>
+<title>Bill Calculator</title>    
+<style>
+    h1{
+        color:black;
+        font-weight:bold;
+        text-align: center;
+        
+    }
+    table{
+        background-color: #FFB6C1;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 25%;
+        border-color:#808080;
+       
+    }
+    td{
+        padding:20px;
+        
+    }
+</style>    
+<script>
+    function calculateTotalPrice(){
+        var price=document.getElementById("price").value;
+        var quantity=document.getElementById("qty").value;
+        document.getElementById("totalPrice").innerHTML=price*quantity;
+        return false;
+    }
+    
+</script>
+</head>   
+<body>
+    <h1>Bill Calculator</h1>
+    <form onsubmit="return calculateTotalPrice();">
+    <table>
+    <tr>
+    <td><lable for="productName">Product Name</lable></td>
+    <td><input type="text" id="productName" placeholder="Enter the product name" required></td>    
+    </tr>   
+    <tr>
+    <td><lable for="price">Product Price in Rs.</lable></td>   
+    <td><input type="number" id="price" placeholder="Enter the price of product" required></td>    
+    </tr> 
+    <tr>
+    <td><lable for="qty">Quantity</lable></td>
+    <td><input type="number" id="qty" placeholder="Enter the quantity of product" required min="1"></td>
+    </tr>  
+    <tr>
+    <td><lable for="totalprice">Total Price in Rs.</lable></td>
+    <td><output id="totalPrice" name="totalprice" for="price qty" required></output></td>    
+    </tr>
+    <tr>
+    <td><input type="submit" id="submitButton"></td>
+    </tr>
+    
+    </table>    
+    
+    
+    
+    </form>
+</body>    
+    
+
+
+
+
+
+</html>
