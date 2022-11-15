@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Calculator</title>
+<head>
+  <style>
+    h1 {
+            text-align: center;
+            font-weight: bold;
+            color: black;
+        
+        }</style> 
+</head>
+
+<body>
+    <center>
+        <h1>Simple Calculator</h1>
+        <img src="https://th.bing.com/th/id/OIP.-YN1vXFpuSYFyh9h0MOHkQAAAA?pid=ImgDet&rs=1" alt="calculator" height="400">
+        <table>
+
+            
+            
+            <tr>
+                <td>
+                    <lable>Number1</lable>
+                </td>
+                <td><input type="text" id="number1" /></td>
+            </tr>
+            <tr >
+                <td>
+                    <lable>Number2</lable>
+                </td>
+                <td><input type="text" id="number2" /></td>
+            </tr>
+
+            <tr>
+                <td><label>Operation</label></td>
+                <td>
+                    <select id="operation">
+                        <option value="+">ADDITION</option>
+                        <option value="-">SUBSTARTION</option>
+                        <option value="/">DIVISION</option>
+                        <option value="*">MULTIPLICATION</option>
+                    </select>
+                </td>
+            </tr>
+           
+                <td>Result</td>
+                <td><input type="text" id="result" /></td>
+
+        </table>
+        <button onclick="calculate()"><img src="https://s3.amazonaws.com/s3.supplyhouse.com/html/img/btn/calculate_blue.png"></button>
+        <button onclick="history.go(0)"><img src="https://th.bing.com/th/id/R.84c8eef27791bc58152eb14a33ee91b2?rik=RzAwNb23Um1hqA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fD%2fQ%2fc%2ft%2fP%2fa%2freset-button-purple-md.png&ehk=sO16IIQZ6HLIvDdUjW2ujB5GbGuSfCXNlDZcsCIiNQQ%3d&risl=&pid=ImgRaw&r=0" width="100" height="30"></button>
+        <script>
+
+            function calculate() {
+                var n1 = parseInt(document.getElementById('number1').value);
+                var n2 = parseInt(document.getElementById('number2').value);
+                var op = document.getElementById('operation').value;
+
+                switch (op) {
+                    case '/': document.getElementById('result').value = n1 / n2;
+                    break;
+                    case '*': document.getElementById('result').value = n1 * n2;
+                    break;
+                    case '-': document.getElementById('result').value = n1 - n2;
+                    break;
+                    case '+': document.getElementById('result').value = n1 + n2;
+                }
+            }
+        </script>
+    </center>
+</body>
+
+</html>
