@@ -1,6 +1,3 @@
---Shipra Goswami(2225506)
-
-
 -- create database
 create database sqlhandson2;
 
